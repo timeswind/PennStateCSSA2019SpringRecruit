@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "connected-react-router": "^6.3.2",
+    "history": "^4.9.0",
     "react": "^16.8.4",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "typeit": "^6.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync --acl public-read --delete build/ s3://2019.cssapsu.cn"
   },
   "eslintConfig": {
     "extends": "react-app"

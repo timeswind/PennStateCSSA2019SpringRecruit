@@ -1,14 +1,159 @@
+html {
+  background: #ee5050;
+  font-size: 125%;
+  overflow-y: scroll;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body .index {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+
+body:before, body:after {
+  background: #EE5050;
+  content: '';
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+}
+
+body:before {
+  top: 0;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body:after {
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+footer {
+  background: #EE5050;
+  padding-top: 16px;
+}
+
+.h--whisper {
+  color: #CF3A3A;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 10.5vw;
+}
+
+.home-whisper--1 span {
+  display: block;
+}
+
+.home-whisper--2 {
+  font-size: 5.5vw;
+}
+
+.home-whisper--2 span{
+  font-size: 5.5vw;
+  display: block;
+}
+
+.home-whisper--3 {
+  font-size: 3.5vw;
+}
+
+.home-whisper--3 span{
+  font-size: 4vw;
+  display: block;
+  letter-spacing: normal;
+}
+
+.SlideIn-appear {
+  opacity: 0;
+}
+.SlideIn-appear.SlideIn-appear-active {
+  opacity: 1;
+  transform: translateX(0);;
+  transition: all 500ms ease-in-out;
+}
+.SlideIn-enter {
+    opacity: 0;
+}
+.SlideIn-enter.SlideIn-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s linear 0.4s;
+}
+.SlideIn-leave {
+    opacity: 1.0;
+    transform: translateX(0);
+}
+.SlideIn-leave.SlideIn-leave-active {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s linear;
+}
+
+.SlideOut-appear {
+
+  opacity: 0;
+}
+
+.SlideOut-appear.SlideOut-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transition: all 500ms ease-in-out;
+}
+.SlideOut-enter {
+    opacity: 0;
+
+}
+.SlideOut-enter.SlideOut-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transition: all 0.2s linear 0.4s;
+}
+.SlideOut-leave {
+    opacity: 1.0;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+}
+.SlideOut-leave.SlideOut-leave-active {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+
+    transition: all 0.2s linear;
 }
