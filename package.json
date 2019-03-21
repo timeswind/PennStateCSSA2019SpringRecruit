@@ -11,15 +11,19 @@
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8",
+    "react-wechat-api": "^0.1.2",
     "redux": "^4.0.1",
-    "typeit": "^6.0.2"
+    "typeit": "^6.0.2",
+    "weixin-js-sdk": "^1.4.0-test",
+    "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync --acl public-read --delete build/ s3://2019.cssapsu.cn"
+    "deploy": "aws s3 sync --acl public-read --delete build/ s3://2019.cssapsu.cn",
+    "create-invalidation": "aws cloudfront create-invalidation --distribution-id E1JDBZZ9PWJHPX --paths \"/index.html\""
   },
   "eslintConfig": {
     "extends": "react-app"

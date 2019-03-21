@@ -75,8 +75,6 @@ p, pre {
   color: #EE5050;
 }
 
-
-
 .group {
   margin: 0 auto;
   max-width: 61.5rem;
@@ -95,10 +93,9 @@ p, pre {
   padding: 16px 32px;
 }
 
-
-[data-history-state^=d\/]{
-  -webkit-transform: translate(0%,-100%);
-  transform: translate(0%,-100%);
+[data-history-state^=d\/] {
+  -webkit-transform: translate(0%, -100%);
+  transform: translate(0%, -100%);
 }
 
 .cssa-logo {
@@ -177,13 +174,42 @@ nav ul, nav ol {
   text-align: center;
 }
 
-.section-department .h1,  .section-department-inverse .h1{
-  font-size:32px;
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1s; /* Firefox < 16 */
-   -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-       animation: fadein 1s;
+.s72, .h1 {
+  font-size: 1.8rem;
+}
+
+.section-department .h1, .section-department-inverse .h1 {
+  font-size: 32px;
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+@media only screen and (max-width: 400px) {
+  .h, .h1 {
+    font-size: 27px;
+  }
+  .section-department .h1, .section-department-inverse .h1 {
+    font-size: 27px;
+  }
+}
+
+.department_head {
+  -webkit-animation: buttonDropDown 0.5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: buttonDropDown 0.5s;
+  /* Firefox < 16 */
+  -ms-animation: buttonDropDown 0.5s;
+  /* Internet Explorer */
+  -o-animation: buttonDropDown 0.5s;
+  /* Opera < 12.1 */
+  animation: buttonDropDown 0.5s;
 }
 
 .links--accent a:hover, .link--accent:hover, .links--accent a:focus, .link--accent:focus {
@@ -204,6 +230,17 @@ nav ul, nav ol {
 
 .department-p-1 {
   text-indent: 2em;
+  font-size: 13pt;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.department-p-1 span.hignlight {
+  color: #a02727;
+}
+
+.department-p-1-no-indent {
+  text-indent: 0;
   font-size: 13pt;
   line-height: 1.5;
   font-weight: normal;
@@ -231,7 +268,7 @@ nav ul, nav ol {
 }
 
 .section-department-q-and-a {
-  padding-bottom: 32px;
+  padding-bottom: 0px;
 }
 
 .section-department-inverse {
@@ -240,11 +277,12 @@ nav ul, nav ol {
 }
 
 .cv-notice {
-  font-size: 4vw !important;
+  font-size: 4vw!important;
   padding: 32px;
   text-align: left;
   color: #fff;
-  line-height: 1.5
+  line-height: 1.5;
+  margin-top: 0;
 }
 
 .contact-footer__subtitle {
@@ -282,10 +320,6 @@ nav ul, nav ol {
   font-size: .65rem;
 }
 
-.s72, .h1 {
-  font-size: 1.8rem;
-}
-
 .s28 {
   font-size: 1.1rem;
 }
@@ -319,7 +353,7 @@ nav ul, nav ol {
 }
 
 .projects__item {
-  border-radius: .2rem;
+  border-radius: 5px !important;
   box-shadow: rgba(0, 0, 0, .15) 0 1.6rem 4.75rem;
   color: #1b1b1b;
   display: -webkit-flex;
@@ -344,8 +378,8 @@ nav ul, nav ol {
 .projects__bg {
   background: left center no-repeat;
   background-size: cover;
-  border-top-right-radius: inherit;
-  border-bottom-right-radius: inherit;
+  border-radius: inherit;
+  /* border-bottom-right-radius: inherit; */
   height: 100%;
   position: absolute;
   right: 0;
@@ -394,20 +428,22 @@ nav ul, nav ol {
   padding: 1.28em 2em 1.08em;
   text-align: center;
   text-decoration: none;
-  transition: all .25s cubic-bezier(.625,.125,.305,.875);
+  transition: all .25s cubic-bezier(.625, .125, .305, .875);
   vertical-align: top;
   width: auto;
 }
-.home-project__airplan_wrapper{
+
+.home-project__airplan_wrapper {
   position: absolute;
   right: 0;
   padding-top: 30%;
   top: 189px;
-  -webkit-transform: translate(-10%,-42%);
-  transform: translate(1%,0%);
+  -webkit-transform: translate(-10%, -42%);
+  transform: translate(1%, 0%);
   width: 30%;
 }
-.home-project__airplan{
+
+.home-project__airplan {
   height: 100%;
   left: 0;
   position: absolute;
@@ -428,7 +464,7 @@ nav ul, nav ol {
   [class^=btn--] {
     font-size: 0.9rem;
     padding: 1.28em 2em 1.08em;
-}
+  }
 }
 
 @media only screen and (min-width: 32rem) {
@@ -439,10 +475,10 @@ nav ul, nav ol {
     max-width: none;
     padding-right: 36%;
     min-height: 50vw;
-}
+  }
   .projects__bg {
     width: 50%;
-}
+  }
 }
 
 @media only screen and (min-width: 48rem) {
@@ -481,7 +517,7 @@ nav ul, nav ol {
   width: 80px;
   text-align: center;
   text-decoration: none;
-  transition: all .25s cubic-bezier(.625,.125,.305,.875);
+  transition: all .25s cubic-bezier(.625, .125, .305, .875);
   vertical-align: bottom;
 }
 
@@ -497,35 +533,103 @@ nav ul, nav ol {
   border-bottom: 4px solid #1b1b1b;
 }
 
-.department-img {
-  width: 100%;
-  margin: 16px 0;
+.department-img-wrapper {
+  text-align: left;
 }
 
-.department-q-and-a{
+.department-img-wrapper span {
+  font-size: 13pt;
+  font-weight: normal;
+  color: #666;
+}
+
+.department-img-wrapper span:first-of-type {
+  margin-top: 16px;
+}
+
+.department-img {
+  width: 100%;
+  margin: 16px 0 0 0;
+  border-radius: 5px;
+  max-width: 800px;
+  display: block
+}
+
+.department-q-and-a {
   color: #a02727;
   font-weight: normal;
   font-size: 20px;
 }
 
-
-.department-question{
+.department-question {
   color: #a02727;
   font-weight: bold;
 }
 
-.department-answer{
+.department-answer {
   color: #fff;
   font-weight: normal;
 }
 
-@keyframes fadein {
-  from { opacity: 0; transform: translate(-10%, 0%) }
-  to   { opacity: 1; transform: translate(0%, 0%)}
+@keyframes buttonDropDown {
+  from {
+    opacity: 0;
+    transform: translate(0%, -100%)
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%)
+  }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes buttonDropDown {
+  from {
+    opacity: 0;
+    transform: translate(0%, -100%)
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%)
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate(0%, -10%)
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%)
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+
 @-webkit-keyframes fadein {
-  from { opacity: 0; transform: translate(0%, -10%) }
-  to   { opacity: 1; transform: translate(0%, 0%)}
+  from {
+    opacity: 0;
+    transform: translate(0%, -10%)
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%)
+  }
+}
+
+.departments-list-with-little-sa {
+  margin: 0;
+}
+
+.departments-list-with-little-sa li {
+  display: flex;
+  flex-direction: row;
+}
+
+.departments-list-with-little-sa li a {}
+
+.departments-list-with-little-sa li a img {
+  width: 100%
 }

@@ -19,6 +19,8 @@ class Footer extends Component {
               </a>
               </li>
             </ul>
+
+          <p className="h h--whisper home-whisper--1" style={{marginTop: "32px"}}><span>We are </span>Penn State.</p>
             <div className="footer__col footer__col--left">
               <p className="p s13 wm footer-comm">宣传部出品</p>
               <p className="p s13-en wm">© Penn State CSSA <span>2019</span></p>

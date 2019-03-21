@@ -3,11 +3,12 @@ import '../App.css';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom'
 import TypeIt from 'typeit';
+import wx from 'weixin-js-sdk';
 
 class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
-    document.title = "CSSA2019|校园很大，也很精彩";
+    document.title = "CSSA2019|校园很大，有你更精彩";
 
     new TypeIt("#animated_slogen_home", {
       speed: 100,
@@ -15,7 +16,37 @@ class Home extends Component {
       strings: ["有心", "每一步", "踏得更高"],
       loop: false
     })
-    .go();
+      .go();
+
+    fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
+      method: "POST",
+      mode: 'cors',
+      body: JSON.stringify({ "url": window.location.href })
+    }).then(function (res) {
+      return res.json()
+    }).then(function (jsondata) {
+      wx.config({
+        debug: false,
+        appId: jsondata.appId,
+        timestamp: parseInt(jsondata.timestamp),
+        nonceStr: jsondata.nonceStr,
+        signature: jsondata.signature,
+        jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareQZone"]
+      });
+    });
+
+    const shareData = {
+      title: '校园很大，有你更精彩 | CSSA2019',
+      desc: "有心，每一步，踏得更高，Penn State CSSA 2019 春季招新",
+      link: "https://2019.cssapsu.cn/",
+      imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+      type: 'link'
+    }
+
+    wx.ready(function () {
+      wx.onMenuShareAppMessage(shareData);
+      wx.onMenuShareTimeline(shareData);
+    });
   }
 
   render() {

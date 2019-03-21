@@ -5,6 +5,7 @@ import './typo.css';
 import './Glyphter.css';
 import AppRouter from './App';
 import * as serviceWorker from './serviceWorker';
+import 'whatwg-fetch'
 // import { applyMiddleware, compose, createStore } from 'redux'
 // import createRootReducer from './reducers'
 // import { routerMiddleware } from 'connected-react-router'
