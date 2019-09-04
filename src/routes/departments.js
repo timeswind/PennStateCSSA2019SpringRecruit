@@ -177,7 +177,7 @@ class Departments extends Component {
 
         const shareData = {
             title: 'CSSA2019|部门一览',
-            desc: "校园很大，有你更精彩！2019CSSA春季招新，十大部门，总有一个适合你。",
+            desc: "校园很大，有你更精彩！2019CSSA秋季招新，十大部门，总有一个适合你。",
             link: "https://2019.cssapsu.cn/departments",
             imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
@@ -197,7 +197,7 @@ class Departments extends Component {
                     <section className="section section--first">
                         <div className="group">
                             <h1 className="h1" style={{ display: "block", textAlign: "left", height: "114px" }}>
-                                <span style={{ display: "block", fontWeight: "normal", fontSize: "13pt", color: "#666", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 春季招新</span>
+                                <span style={{ display: "block", fontWeight: "normal", fontSize: "13pt", color: "#666", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 秋季招新</span>
                                 {/* <span style={{ display: "block", textAlign: "left" }}>这里很大, </span>也很精彩。 */}
                                 <span className="type-effect" id="animated_slogen"></span>
                             </h1>

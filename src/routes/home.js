@@ -8,45 +8,45 @@ import wx from 'weixin-js-sdk';
 class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
-    document.title = "CSSA2019|校园很大，有你更精彩";
+    document.title = "校园很大，有你更精彩";
 
     new TypeIt("#animated_slogen_home", {
       speed: 100,
       startDelay: 300,
-      strings: ["有心", "每一步", "踏得更高"],
+      strings: ["传播中国文化", "分享美好校园生活"],
       loop: false
     })
       .go();
 
-    fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
-      method: "POST",
-      mode: 'cors',
-      body: JSON.stringify({ "url": window.location.href })
-    }).then(function (res) {
-      return res.json()
-    }).then(function (jsondata) {
-      wx.config({
-        debug: false,
-        appId: jsondata.appId,
-        timestamp: parseInt(jsondata.timestamp),
-        nonceStr: jsondata.nonceStr,
-        signature: jsondata.signature,
-        jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareQZone"]
-      });
-    });
+    // fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
+    //   method: "POST",
+    //   mode: 'cors',
+    //   body: JSON.stringify({ "url": window.location.href })
+    // }).then(function (res) {
+    //   return res.json()
+    // }).then(function (jsondata) {
+    //   wx.config({
+    //     debug: false,
+    //     appId: jsondata.appId,
+    //     timestamp: parseInt(jsondata.timestamp),
+    //     nonceStr: jsondata.nonceStr,
+    //     signature: jsondata.signature,
+    //     jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareQZone"]
+    //   });
+    // });
 
-    const shareData = {
-      title: '校园很大，有你更精彩 | CSSA2019',
-      desc: "有心，每一步，踏得更高，Penn State CSSA 2019 春季招新",
-      link: "https://2019.cssapsu.cn/",
-      imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
-      type: 'link'
-    }
+    // const shareData = {
+    //   title: '传播中国文化，美好校园生活|CSSA2019',
+    //   desc: "传播中国文化，美好校园生活，Penn State CSSA 2019 秋季招新",
+    //   link: "https://2019.cssapsu.cn/",
+    //   imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+    //   type: 'link'
+    // }
 
-    wx.ready(function () {
-      wx.onMenuShareAppMessage(shareData);
-      wx.onMenuShareTimeline(shareData);
-    });
+    // wx.ready(function () {
+    //   wx.onMenuShareAppMessage(shareData);
+    //   wx.onMenuShareTimeline(shareData);
+    // });
   }
 
   render() {
@@ -55,10 +55,7 @@ class Home extends Component {
         <section className="section section--first">
           <div className="group">
             <h1 className="h1" style={{ display: "block", textAlign: "left", height: "157px" }}>
-              <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 春季招新</span>
-              {/* <span style={{ display: "block", textAlign: "left" }}>有心, </span>
-            <span style={{ display: "block", textAlign: "left" }}>每一步, </span>
-            踏得更高。 */}
+              <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 秋季招新</span>
               <span className="type-effect" id="animated_slogen_home"></span>
 
             </h1>

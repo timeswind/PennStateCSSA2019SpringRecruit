@@ -72,7 +72,7 @@ class Marketing extends Component {
                             </h1>
 
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 春季招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 招新</span>
                                 <span style={{ display: "block", textAlign: "left" }}>如果你有一百种技能, </span>我们就缺一百个你。
                             </h1>
                         </div>

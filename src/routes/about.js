@@ -57,6 +57,8 @@ class About extends Component {
                             <span className="type-effect" id="animated_slogen_home"></span>
                         </h1>
                         <p>宾夕法尼亚州立大学中国学生学者联合会（Penn State Chinese Student and Scholars Association），是宾夕法尼亚州立大学中国留学生和学者的联合组织， Penn State CSSA是Penn State University-UP所在城市State College最大的华人团体组织，也是在PSU唯一经中国领事馆认证的组织。</p>
+                        <p>我们致力于传播中华文化，搭建中美沟通桥梁。服务于state college地区全体中国学生学者乃至全体华人，从丰富课余活动到助力学业与就业，多维度全方位的为学生的校园生活保驾护航。</p>
+
                         <p className="h h--whisper home-whisper--1" style={{ marginTop: "32px" }}><span>Penn State</span>杰出学生组织</p>
 
                         <h3 className="contact-footer__subtitle wm p s13 allcaps">微信公众号
