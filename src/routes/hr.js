@@ -14,7 +14,7 @@ class HR extends Component {
     name = "HR 人力资源"
     name_en = "Human Resource"
     componentDidMount() {
-        document.title = "HR|立信于心，尽责至善|CSSA2019";
+        document.title = "HR|立信于心，尽责至善|CSSA2020";
         window.scrollTo(0, 0);
 
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
@@ -35,10 +35,10 @@ class HR extends Component {
         });
 
         const shareData = {
-            title: 'HR|立信于心，尽责至善|CSSA2019',
+            title: 'HR|立信于心，尽责至善|CSSA2020',
             desc: "我们是CSSA-HR，我们是CSSA最坚实的后盾，最优秀的守护者。英雄本无名，功绩在人心。欢迎闪耀的你。",
-            link: "https://2019.cssapsu.cn/d/hr",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            link: "https://join.cssapsu.cn/d/hr",
+            imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 
@@ -61,7 +61,7 @@ class HR extends Component {
                                 <span className="department-text-white-underline" style={{ display: "inline", textAlign: "left" }}>{this.name}</span>
                             </h1>
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
                                 <span style={{ display: "block", textAlign: "left" }}>只木易折，众筷难摧。</span>立信于心，尽责至善。
                             </h1>
                         </div>

@@ -16,7 +16,7 @@ class SNR extends Component {
     name = "文娱部"
     name_en = "Sports and Recreation"
     componentDidMount() {
-        document.title = "活力梦想与热血|文娱部|CSSA2019";
+        document.title = "活力梦想与热血|文娱部|CSSA2020";
         window.scrollTo(0, 0);
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
             method: "POST",
@@ -36,10 +36,10 @@ class SNR extends Component {
         });
 
         const shareData = {
-            title: '活力梦想与热血|文娱部|CSSA2019',
+            title: '活力梦想与热血|文娱部|CSSA2020',
             desc: "火爆校园的狼王争霸赛，热血沸腾的校内篮球赛，Lion's Cup校级篮球赛，精彩刺激的校内台球赛，拼搏对战的各类battle等等。充分丰富了同学们的课外生活，让大家在不同的活动中结交朋友，增进友谊。",
-            link: "https://2019.cssapsu.cn/d/snr",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            link: "https://join.cssapsu.cn/d/snr",
+            imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 
@@ -63,7 +63,7 @@ class SNR extends Component {
                             </h1>
 
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
 
                                 <span style={{ display: "block", textAlign: "left" }}>文体两开花的你</span>文娱非你莫属
                             </h1>

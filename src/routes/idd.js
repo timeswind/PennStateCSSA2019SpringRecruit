@@ -20,7 +20,7 @@ class IDD extends Component {
     name_en = "Intellectual Development Department"
 
     componentDidMount() {
-        document.title = "驱散迷茫 守护未来|学术部|CSSA2019";
+        document.title = "驱散迷茫 守护未来|学术部|CSSA2020";
         window.scrollTo(0, 0);
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
             method: "POST",
@@ -40,10 +40,10 @@ class IDD extends Component {
         });
 
         const shareData = {
-            title: '驱散迷茫 守护未来|学术部|CSSA2019',
+            title: '驱散迷茫 守护未来|学术部|CSSA2020',
             desc: "感受过曾是新生的难处，想要帮助新生顺利地适应大学生活;关注校园资讯，了解校园历史;想要跟更多的人分享学术资讯和个人经验...",
-            link: "https://2019.cssapsu.cn/d/idd",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            link: "https://join.cssapsu.cn/d/idd",
+            imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 
@@ -67,7 +67,7 @@ class IDD extends Component {
                             </h1>
 
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
                                 <span style={{ display: "block", textAlign: "left" }}>是求学路上的灯塔</span>照亮你前行的方向
                             </h1>
                         </div>
@@ -82,7 +82,7 @@ class IDD extends Component {
                                 我们
                             </h1>
                             <p className="department-p-1-no-indent">
-                                为新生排疑解忧［新生手册及新生见面会］
+                                为新生排疑解忧［新生手册、新生群、新生见面会］
                             </p>
                             <p className="department-p-1-no-indent">
                                 我们开展具有人生指导意义的讲座［求职、升学、专业选择讲座］

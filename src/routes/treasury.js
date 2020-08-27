@@ -32,7 +32,7 @@ class Treasury extends Component {
     name_en = "Treasury"
 
     componentDidMount() {
-        document.title = "财务部|PSU第一财团|CSSA2019";
+        document.title = "财务部|PSU第一财团|CSSA2020";
         window.scrollTo(0, 0);
 
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
@@ -53,10 +53,10 @@ class Treasury extends Component {
         });
 
         const shareData = {
-            title: '财务部|PSU第一财团|CSSA2019',
+            title: '财务部|PSU第一财团|CSSA2020',
             desc: "PSU第一财团的我们紧紧掌握经济的命脉， 无所不能的妹子们和汉子们 财务部等着你们！",
-            link: "https://2019.cssapsu.cn/d/treasury",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            link: "https://join.cssapsu.cn/d/treasury",
+            imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 
@@ -80,7 +80,7 @@ class Treasury extends Component {
                             </h1>
 
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
 
                                 <span style={{ display: "block", textAlign: "left" }}>Money与发票, </span>都要Hold住。
                             </h1>

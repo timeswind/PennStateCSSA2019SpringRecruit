@@ -8,7 +8,7 @@ class Graduate extends Component {
     name = "研究生部"
     name_en = "Department of Graduate Students"
     componentDidMount() {
-        document.title = "研究生部|职业发展与诗和远方|CSSA2019";
+        document.title = "研究生部|职业发展与诗和远方|CSSA2020";
         window.scrollTo(0, 0);
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
             method: "POST",
@@ -28,10 +28,10 @@ class Graduate extends Component {
         });
 
         const shareData = {
-            title: '研究生部|职业发展与诗和远方|CSSA2019',
+            title: '研究生部|职业发展与诗和远方|CSSA2020',
             desc: "研究生部是CSSA目前唯一一个以研究生博士生为主导，兼容本科生的部门。而职业，的确是每一个学生毕业后的归宿。",
-            link: "https://2019.cssapsu.cn/d/graduate",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            link: "https://join.cssapsu.cn/d/graduate",
+            imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 
@@ -55,7 +55,7 @@ class Graduate extends Component {
                             </h1>
 
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
 
                                 <span style={{ display: "block", textAlign: "left" }}>飞鸟择良木</span>Brain is the new sexy
                             </h1>

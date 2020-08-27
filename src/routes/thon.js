@@ -26,7 +26,7 @@ const qAndA = [
 class THON extends Component {
     name = "THON"
     componentDidMount() {
-        document.title = "THON| RA!SE HOPE,ENRICH L!FE |CSSA2019";
+        document.title = "THON| RA!SE HOPE,ENRICH L!FE |CSSA2020";
         window.scrollTo(0, 0);
 
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
@@ -47,10 +47,10 @@ class THON extends Component {
         });
 
         const shareData = {
-            title: 'THON| RA!SE HOPE,ENRICH L!FE |CSSA2019',
+            title: 'THON| RA!SE HOPE,ENRICH L!FE |CSSA2020',
             desc: "作为全球最大的大学生慈善组织，Penn State THON ，每年都举办许多极具影响力的活动而为癌症儿童募捐。 下面跟我们一起回顾一下今年最大型的活动THON WKND的精彩瞬间吧",
-            link: "https://2019.cssapsu.cn/d/thon",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            link: "https://join.cssapsu.cn/d/thon",
+            imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 
@@ -75,7 +75,7 @@ class THON extends Component {
                             </h1>
 
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
 
                                 <span style={{ display: "block", textAlign: "left" }}>Volunteer不够劲儿？</span>正式部员等着你！
                             </h1>

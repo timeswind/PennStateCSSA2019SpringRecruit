@@ -11,19 +11,19 @@ const qAndA = [
         a: "编程背景是我们看中的一个点，但不是唯一。电竞相关事项（活动策划，文案编写，以及技术支持）也需要有才华有热情的你。只要你对网络部相关事宜感兴趣，我们随时欢迎。"
     },
     {
-        q: "作为技术负责人员，我需要拥有什么能力？",
-        a: "Javascript, HTML, PHP 与Python是我们需要你在进部之后渐渐入门并掌握基本技能的几门语言。学过其他语言的同学也可以大胆申请，都学过java/c++等语言的人还怕什么Python呀。"
+        q: "能介绍一下你们的电竞赛事吗？",
+        a: "我们在每学年都会举办一次电竞大赛，游戏的种类也在时间的演变下丰富起来：王者荣耀（国服）/英雄联盟（美服）/云顶之翼/吃鸡比赛（国服）等。当然，在种种耀眼赛事的背后，少不了我们每一个策划人员和在场工作者的辛苦付出。当然，更多的还需要我们去探索，我们也需要你的奇思妙想。"
     },
     {
-        q: "能介绍一下你们的电竞赛事吗？",
-        a: "我们在每学年都会举办一次电竞大赛，游戏包括但不仅限于英雄联盟（美服）。我们还有正经的游戏主播会提供国内平台进行赛事直播。今年我们也会慢慢添加其他电竞游戏，所以我们需要你的奇思妙想。"
-    }
+        q:  "除了日常的社团的工作，还有什么需要干的？",
+        a:  "在偌大的集体中，你可以去大胆和其他部门的朋友们交流，积极参与集体举办的活动。当然，在我们的部门内部，还需要你在业余抽出时间来参加我们的部门会议和内部团建。更多地，我们希望你拥有强大的团队亲和力和凝聚力。"
+            }
 ]
 class Graduate extends Component {
     name = "网络部"
     name_en = "Web Team Department"
     componentDidMount() {
-        document.title = "网络部|初出茅庐到独当一面|CSSA2019";
+        document.title = "网络部|趁年轻，让我们一起为梦想窒息。|CSSA2020";
         window.scrollTo(0, 0);
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
             method: "POST",
@@ -43,10 +43,10 @@ class Graduate extends Component {
         });
 
         const shareData = {
-            title: '网络部|初出茅庐到独当一面|CSSA2019',
-            desc: "我们主要负责微信小程序和网页论坛的及时更新与维护，在每学期为其他部门提供相应的技术支持，以及在每学年举办电竞相关赛事。",
-            link: "https://2019.cssapsu.cn/d/webteam",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            title: '网络部|趁年轻，让我们一起为梦想窒息。|CSSA2020',
+            desc: "我们主要负责网页论坛的及时更新与维护，在每学期为其他部门的相关活动提供相应的技术支持，以及在每学年举办电竞相关赛事。网页论坛开发，论坛维护，文案供稿，UI设计，交互体验，设计管理与活动策划等。。",
+            link: "https://join.cssapsu.cn/d/webteam",
+            imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 
@@ -70,9 +70,9 @@ class Graduate extends Component {
                             </h1>
 
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
 
-                                <span style={{ display: "block", textAlign: "left" }}>初出茅庐到独当一面</span>我们陪你成长
+                                <span style={{ display: "block", textAlign: "left" }}>趁年轻，</span>让我们一起为梦想窒息。
                             </h1>
                         </div>
                     </section>
@@ -80,7 +80,10 @@ class Graduate extends Component {
                         <div className="group">
                             <img className="department-img" src="/images/网络部/网络部1.png" />
                             <h1 className="h1" style={{ display: "block", textAlign: "left", marginBottom: "32px" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>和我们一起从实践中成长</span>
+                                <span style={{ display: "block", letterSpacing: "-1px", marginBottom: "8px" , textAlign: "left"}}>和我们一起:</span>
+                                <span style={{ display: "block", fontSize: "20pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" , textAlign: "center"}}>从实践中成长</span>
+                                <span style={{ display: "block", fontSize: "20pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" , textAlign: "center"}}>从自办赛事中收获成功的喜悦</span>
+                                <span style={{ display: "block", fontSize: "20pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "20px" , textAlign: "center"}}>从团队合作中收获最纯真的友谊</span>
                                 <span style={{ display: "block", textAlign: "left" }}>我们，真的求贤若渴。</span>
 
                             </h1>
@@ -94,6 +97,29 @@ class Graduate extends Component {
                                 我们做的不仅仅只有程序，我们欢迎每一位对技术有兴趣、对电竞有热情、对设计有想法的朋友。
                             </p>
                         </div>
+                        
+                        <div className="group">
+                        <h1 className="h1" style={{ display: "block", textAlign: "left", marginBottom: "32px" }}>
+                                <span style={{ display: "block", textAlign: "left" }}>我们需要：</span>
+                            </h1>
+                        <p className="department-p-1">
+                                ·对推文和海报创作有绝对灵感的你
+                                
+                            </p>
+                        <p className="department-p-1">
+                                ·对网站和计算机有独到简洁的你
+                                
+                            </p>
+                        <p className="department-p-1">
+                                ·对活动策划有充分热情的你
+                                
+                            </p>                        
+                        <p className="department-p-1">
+                                ·当然，拥有强大技能的同时，别忘了拥有一颗踏实工作与集体荣誉感的心。
+                                
+                            </p>        
+                        </div>
+                        
                     </section>
                     <section className="section section-department-q-and-a">
 
