@@ -16,8 +16,8 @@ const departmentsData = [
     },
     {
         name: "HR 人力资源",
-        slogen: "内心坚如磐石",
-        slogen2: "又懂得变通",
+        slogen: "做事不循私",
+        slogen2: "交流需高效",
         bg: "/images/HR_封面.jpg",
         bg_color: "#020307",
         to: "/d/hr"

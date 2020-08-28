@@ -6,8 +6,12 @@ import wx from 'weixin-js-sdk';
 
 const qAndA = [
     {
-        q: "沟通是学习一门艺术，监督是追求一种秩序。",
-        a: ""
+        a: "期待你的加入，也期待我们的大学故事里有你的痕迹。",
+        q: ""
+    },
+    {
+        a:"因为有了你的灵魂，让这原本风尘仆仆的旅程，变得令人心驰神往。",
+        q:"",
     }
 ]
 class HR extends Component {
@@ -77,28 +81,28 @@ class HR extends Component {
 
                             </h1>
                             <ul>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •准备一年两次的招新活动，为CSSA纳入新的人才。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •策划新生活动，帮助新生快速熟悉校园。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •举办新生接机活动，给异乡的同胞们熟悉的温暖。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •构思和举办团建和年会活动，促进部门友谊。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •学会做会议记录，预算管理，记录考勤和活动策划。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •必要时调解内部纠纷，保持内部团结和秩序统一。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •锻炼和实践交流技巧，提前为职场生涯打下基础。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •策划和执行换届选举，选出新一代领导力。
                             </li>
                             </ul>
@@ -110,33 +114,37 @@ class HR extends Component {
                                 <span style={{ display: "block", textAlign: "left" }}>如果你</span>
                             </h1>
                             <ul>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •热爱组织活动。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •有良好的时间观念和时间管理能力。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •喜欢研究心理。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •想提升人际交往的能力。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •想要接触不同类型的工作。
                             </li>
-                            <li className="department-p-1-no-indent" style ={{marginBottom: "8px"}}>
+                            <li className="department-p-1-no-indent" >
                                 •希望得到pre-work experience。
                             </li>
                             </ul>
                             <h1 className="h1" style={{ display: "block", textAlign: "left", marginBottom: "32px" }}>
                                 
-                                <span style={{ display: "block", textAlign: "left" }}>那你就是最适合HR的人选，期待你的加入，也期待我们的大学故事里有你的痕迹。</span>
-                                <span style={{ display: "block", textAlign: "left" }}>因为有了你的灵魂，让这原本风尘仆仆的旅程，变得令人心驰神往。</span>
+                                <span style={{ display: "block", textAlign: "left" }}>那你就是最适合HR的人选</span>
+
                             </h1>
                             
                             <div className="department-img-wrapper">
                                 <img className="department-img" src="/images/hr/3.jpg" />
+                            </div>
+                            <div className ="h1" style={{  marginBottom: "2px" }}>
+                               沟通是学习一门艺术，监督是追求一种秩序。
+        
                             </div>
                         </div>
                     </section>
