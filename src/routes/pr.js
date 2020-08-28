@@ -89,7 +89,7 @@ class PR extends Component {
                             <li>愿意为CSSA贡献出个人时间</li>
                             <li>流利的中英文对话</li>
                             <li>较强的沟通技巧</li>
-                            <li>微信推送文案编辑，排版制作能力</li>
+                            
                         </div>
                     </section>
                 </div>
