@@ -77,7 +77,7 @@ class THON extends Component {
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
                                 <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
 
-                                <span style={{ display: "block", textAlign: "left" }}>Volunteer不够劲儿？</span>正式部员等着你！
+                                <span style={{ display: "block", textAlign: "left" }}>农夫山泉有点甜,</span>不进THON部有点悬！
                             </h1>
                         </div>
                     </section>
