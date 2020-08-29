@@ -23,7 +23,7 @@ class Marketing extends Component {
     name = "宣传部"
     name_en = "Marketing"
     componentDidMount() {
-        document.title = "宣传部|无穷的创造|CSSA2019";
+        document.title = "宣传部|无穷的创造|CSSA2020";
         window.scrollTo(0, 0)
 
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
@@ -45,7 +45,7 @@ class Marketing extends Component {
         });
 
         const shareData = {
-            title: '宣传部|无穷的创造|CSSA2019',
+            title: '宣传部|无穷的创造|CSSA2020',
             desc: "如果你有一百种技能, 我们就缺一百个你。",
             link: "https://2019.cssapsu.cn/d/marketing",
             imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",

@@ -37,8 +37,8 @@ class About extends Component {
         const shareData = {
             title: 'Penn State CSSA 关于我们',
             desc: "State College最大的华人组织",
-            link: "https://2019.cssapsu.cn/",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            link: "https://join.cssapsu.cn/",
+            imgUrl: "https://jion.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 

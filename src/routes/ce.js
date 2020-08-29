@@ -23,7 +23,7 @@ class CE extends Component {
     name_en = "Culture Event Department"
 
     componentDidMount() {
-        document.title = "活动部|置身幕后舞台由你掌控|CSSA2019";
+        document.title = "活动部|置身幕后舞台由你掌控|CSSA2020";
         window.scrollTo(0, 0);
         
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
@@ -44,10 +44,10 @@ class CE extends Component {
         });
 
         const shareData = {
-            title: '活动部|置身幕后舞台由你掌控|CSSA2019',
+            title: '活动部|置身幕后舞台由你掌控|CSSA2020',
             desc: "我们是CSSA面向全校，面向千万师生的门面部门，活动策划部。我们是策划举办每年中秋晚会和春节联欢晚会的幕后大佬。我们也是对全校性homecoming游行大典唯一中国团体的负责部门。",
-            link: "https://2019.cssapsu.cn/d/ce",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            link: "https://join.cssapsu.cn/d/ce",
+            imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 
@@ -71,7 +71,7 @@ class CE extends Component {
                             </h1>
 
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
 
                                 <span style={{ display: "block", textAlign: "left" }}>我们不需要太阳</span>却忠爱繁星般闪烁的你
                             </h1>

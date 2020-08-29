@@ -9,7 +9,7 @@ class PR extends Component {
     name_en = "Public Relation"
 
     componentDidMount() {
-        document.title = "PR|经济基础决定上层建筑|CSSA2019";
+        document.title = "PR|经济基础决定上层建筑|CSSA2020";
         window.scrollTo(0, 0)
         
         fetch("https://wechat.cssapsu.cn/jssdk/jssdksigniture", {
@@ -30,10 +30,10 @@ class PR extends Component {
         });
 
         const shareData = {
-            title: 'PR|经济基础决定上层建筑|CSSA2019',
+            title: 'PR|经济基础决定上层建筑|CSSA2020',
             desc: "我们代表CSSA与外界沟通，从而为PSU华人学生学者争取更多福利，并且加强了CSSA与学校以及与State College地区各个团体的联系。",
-            link: "https://2019.cssapsu.cn/d/pr",
-            imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+            link: "https://join.cssapsu.cn/d/pr",
+            imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
         }
 
@@ -57,7 +57,7 @@ class PR extends Component {
                             </h1>
 
                             <h1 className="h1" style={{ display: "block", textAlign: "left" }}>
-                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 招新</span>
+                                <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 招新</span>
 
                                 <span style={{ display: "block", textAlign: "left" }}>经济基础 </span>决定上层建筑
                             </h1>
@@ -89,7 +89,7 @@ class PR extends Component {
                             <li>愿意为CSSA贡献出个人时间</li>
                             <li>流利的中英文对话</li>
                             <li>较强的沟通技巧</li>
-                            <li>微信推送文案编辑，排版制作能力</li>
+                            
                         </div>
                     </section>
                 </div>

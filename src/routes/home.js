@@ -36,10 +36,10 @@ class Home extends Component {
     // });
 
     // const shareData = {
-    //   title: '传播中国文化，美好校园生活|CSSA2019',
-    //   desc: "传播中国文化，美好校园生活，Penn State CSSA 2019 秋季招新",
-    //   link: "https://2019.cssapsu.cn/",
-    //   imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
+    //   title: '传播中国文化，美好校园生活|CSSA2020',
+    //   desc: "传播中国文化，美好校园生活，Penn State CSSA 2020 秋季招新",
+    //   link: "https://join.cssapsu.cn/",
+    //   imgUrl: "https://join.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
     //   type: 'link'
     // }
 
@@ -55,7 +55,7 @@ class Home extends Component {
         <section className="section section--first">
           <div className="group">
             <h1 className="h1" style={{ display: "block", textAlign: "left", height: "157px" }}>
-              <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 秋季招新</span>
+              <span style={{ display: "block", fontSize: "13pt", color: "#a02727", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 秋季招新</span>
               <span className="type-effect" id="animated_slogen_home"></span>
 
             </h1>

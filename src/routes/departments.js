@@ -16,8 +16,8 @@ const departmentsData = [
     },
     {
         name: "HR 人力资源",
-        slogen: "内心坚如磐石",
-        slogen2: "又懂得变通",
+        slogen: "做事不循私",
+        slogen2: "交流需高效",
         bg: "/images/HR_封面.jpg",
         bg_color: "#020307",
         to: "/d/hr"
@@ -42,7 +42,8 @@ const departmentsData = [
     {
         name: "财务部",
         name_en: "Treasury",
-        slogen: "Penn State 第一财团",
+        slogen: "Money与发票,",
+        slogen2: "都要Hold住。",
         bg: "/images/财务_封面.jpg",
         bg_color: "#fc9665",
         to: "/d/treasury",
@@ -60,14 +61,14 @@ const departmentsData = [
     {
         name: "文娱部",
         name_en: "Sports and Recreation",
-        slogen: "在这里，我们给你青春活力、梦想与热血",
+        slogen: "我们精通文体，娱乐不是问题！",
         bg: "/images/文娱_封面.jpg",
         bg_color: "#419679",
         to: "/d/snr",
         text_shadow: false
     },
     {
-        name: "学术部",
+        name: "学术发展部",
         name_en: "Intellectual Development Department",
         slogen: "驱散迷茫",
         slogen2: "守护未来",
@@ -89,7 +90,8 @@ const departmentsData = [
     {
         name: "网络部",
         name_en: "Web Team Department",
-        slogen: "程序构建和电竞赛事，都只差一个你",
+        slogen: "趁年轻，",
+        slogen2:"让我们一起为梦想窒息。",
         bg: "/images/网络_封面.jpg",
         bg_color: "#4d84ff",
         to: "/d/webteam",
@@ -111,7 +113,7 @@ class DeppartmentCard extends Component {
 class Departments extends Component {
     constructor(props) {
         super(props);
-        document.title = "CSSA2019|部门一览";
+        document.title = "CSSA2020|部门一览";
     }
 
     main_slogen_typing = []
@@ -176,8 +178,8 @@ class Departments extends Component {
         });
 
         const shareData = {
-            title: 'CSSA2019|部门一览',
-            desc: "校园很大，有你更精彩！2019CSSA秋季招新，十大部门，总有一个适合你。",
+            title: 'CSSA2020|部门一览',
+            desc: "校园很大，有你更精彩！2020CSSA秋季招新，十大部门，总有一个适合你。",
             link: "https://2019.cssapsu.cn/departments",
             imgUrl: "https://2019.cssapsu.cn/images/cssa_logo_dark_inverse_w300.png",
             type: 'link'
@@ -197,7 +199,7 @@ class Departments extends Component {
                     <section className="section section--first">
                         <div className="group">
                             <h1 className="h1" style={{ display: "block", textAlign: "left", height: "114px" }}>
-                                <span style={{ display: "block", fontWeight: "normal", fontSize: "13pt", color: "#666", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2019 秋季招新</span>
+                                <span style={{ display: "block", fontWeight: "normal", fontSize: "13pt", color: "#666", letterSpacing: "-1px", marginBottom: "8px" }}>Penn State CSSA 2020 秋季招新</span>
                                 {/* <span style={{ display: "block", textAlign: "left" }}>这里很大, </span>也很精彩。 */}
                                 <span className="type-effect" id="animated_slogen"></span>
                             </h1>
