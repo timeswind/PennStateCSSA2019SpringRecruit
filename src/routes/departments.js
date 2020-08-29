@@ -42,7 +42,8 @@ const departmentsData = [
     {
         name: "财务部",
         name_en: "Treasury",
-        slogen: "Penn State 第一财团",
+        slogen: "Money与发票,",
+        slogen2: "都要Hold住。",
         bg: "/images/财务_封面.jpg",
         bg_color: "#fc9665",
         to: "/d/treasury",
@@ -60,7 +61,7 @@ const departmentsData = [
     {
         name: "文娱部",
         name_en: "Sports and Recreation",
-        slogen: "在这里，我们给你青春活力、梦想与热血",
+        slogen: "我们精通文体，娱乐不是问题！",
         bg: "/images/文娱_封面.jpg",
         bg_color: "#419679",
         to: "/d/snr",
