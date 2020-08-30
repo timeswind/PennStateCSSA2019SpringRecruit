@@ -9,7 +9,7 @@ const departmentsData = [
     {
         name: "宣传部",
         name_en: "Marketing",
-        slogen: "是镜头是画笔，是社会的观察者，传播生活与美好",
+        slogen: "是镜头是画笔，是社会的观察者，传播生活与美好。",
         bg: "/images/宣传_封面.jpg",
         bg_color: "#047dc3",
         to: "/d/marketing"
@@ -42,8 +42,8 @@ const departmentsData = [
     {
         name: "财务部",
         name_en: "Treasury",
-        slogen: "Money与发票,",
-        slogen2: "都要Hold住。",
+        slogen: "Money与发票",
+        slogen2: "都要Hold住",
         bg: "/images/财务_封面.jpg",
         bg_color: "#fc9665",
         to: "/d/treasury",
@@ -80,7 +80,7 @@ const departmentsData = [
     {
         name: "研究生部",
         name_en: "Department of Graduate Students",
-        slogen: "飞鸟择良木，职业发展与诗和远方",
+        slogen: "飞鸟择良木，职业发展与诗和远方。",
         bg: "/images/研究生_封面.jpg",
         bg_color: "#f6f4f5",
         to: "/d/graduate",
@@ -90,8 +90,8 @@ const departmentsData = [
     {
         name: "网络部",
         name_en: "Web Team Department",
-        slogen: "趁年轻，",
-        slogen2:"让我们一起为梦想窒息。",
+        slogen: "趁年轻",
+        slogen2:"让我们一起为梦想窒息",
         bg: "/images/网络_封面.jpg",
         bg_color: "#4d84ff",
         to: "/d/webteam",
@@ -141,6 +141,11 @@ class Departments extends Component {
         })
             .pause(1500)
             .delete()
+            .type("无论你在上海还是美国，")
+            .break()
+            .type("我们都欢迎你。")
+            .pause(1500)
+            .delete()
             .type("嘤其鸣矣，")
             .break()
             .type("求其友声。")
@@ -156,6 +161,7 @@ class Departments extends Component {
             .type("是社会的观察者，")
             .break()
             .type("传播生活与美好。")
+            
             .pause(1500)
             .go();
 
